@@ -234,11 +234,203 @@ ul li a
     line-height: 45px;
 }
 
+/* online-games */
+.online-games
+{
+    padding: 10px 140px;
+    text-align: center;
+    margin-top: 120px;
+}
 
+.online-games-tittle
+{
+    color: #0B0223;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 
+}
 
+.online-games-desc
+{
+    color: #534C64;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
 
+/* online-card */
 
+.online-card
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card
+{
+    width: 25%;
+}
+
+.card img
+{
+    width: 230px;
+    height: 230px;
+    border-radius: 8px;
+}
+
+span
+{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-desc
+{
+    color: #534C64;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    align-items: center;
+}
+
+.hover-desc
+{
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 175px;
+}
+
+.card:hover .hover-desc
+{
+    display: inline;
+}
+
+/* download */
+.download
+{
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    padding: 10px 140px;
+    justify-content: space-around;
+    gap: 130px;
+}
+
+.download-tittle
+{
+    text-align: right;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.download-desc
+{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.download-images img
+{
+    width: 100%;
+}
+
+.images-2 img
+{
+    position: relative;
+    right: 20%;
+    margin-top: -50%;
+    width: 50%;
+}
+
+/* Careers */
+.Career
+{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    margin-top: 100px;
+}
+
+.Career-content
+{
+    margin-left: 90px;
+    margin-top: 70px;
+}
+
+.career-tittle
+{
+    color: #FFF;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.career-desc
+{
+    color: #FFF;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.Career-image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* career-info */
+.career-info
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.info-left-desc
+{
+    color: #FFF;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+.info-right-desc
+{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: right;
+}
 
 /* responsive design */
 @media screen and (max-width:576px)
@@ -270,8 +462,9 @@ ul li a
     {
         padding: 10px 50px;
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .banner-images img
@@ -297,7 +490,58 @@ ul li a
     {
         text-align: center;
     }
-    .purpose-tittle{
+
+    .purpose-tittle
+    {
         font-size: 1.5rem;
+    }
+
+    /* online games */
+    .online-games
+    {
+        padding: 10px 40px;
+        margin-top: 70px;
+    }
+
+    .online-card
+    {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card
+    {
+        width: 100%;
+    }
+
+    /* download */
+    .download
+    {
+        flex-direction: column;
+        margin-top: 70px;
+        padding: 10px 40px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .download-desc,
+    .download-tittle
+    {
+        text-align: center;
+
+    }
+
+    .download-content
+    {
+        margin-bottom: 20px;
+    }
+
+    .images-2 img
+    {
+        position: relative;
+        right: 20%;
+        margin-top: -50%;
+        width: 50%;
     }
 }
