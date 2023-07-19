@@ -16,8 +16,7 @@ body
 
 /* header */
 header
-{
-}
+{}
 
 /* header nav */
 nav
@@ -72,11 +71,130 @@ ul li a
 {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding:10px 20px;
+    padding: 10px 20px;
 }
 
 .fa-youtube
 {
     color: red;
     padding: 0 5px;
+}
+
+/* header-banner */
+.header-banner
+{
+    padding: 10px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-intro
+{
+    color: #0B0223;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.banner-tittle
+{
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-desc
+{
+    color: #534C64;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+    padding: 10px 0;
+}
+
+#banner-desc
+{
+    margin-top: 15px;
+}
+
+.fa-play,
+.fa-download
+{
+    color: rgb(243, 149, 165);
+}
+
+.banner-btn
+{
+    padding: 21px 40px;
+    margin-top: 20px;
+    align-items: flex-start;
+    margin-right: 20px;
+    border: 0;
+    color: white;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+#banner-btn-2
+{
+    background: #4EC5F7;
+}
+
+.banner-images img
+{
+    width: 490px;
+    height: 582px;
+}
+
+/* responsive design */
+@media screen and (max-width:576px)
+{
+    /* nav */
+    nav
+    {
+        flex-direction: column;
+        box-shadow: none;
+        padding: 25px 20px;
+        margin: 10px auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul
+    {
+        flex-direction: column;
+    }
+
+    ul li 
+    {
+        margin-top: 40px;
+    }
+/* header-banner */
+.header-banner
+{
+    padding: 10px 100px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-images img
+{ 
+    width: 100%;
+    height: auto;
+
+}
+.banner-contant{
+    margin-top: 80px;
+}
 }
