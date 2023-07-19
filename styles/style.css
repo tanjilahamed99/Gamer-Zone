@@ -495,6 +495,59 @@ span
     line-height: normal;
 }
 
+/* footer */
+footer
+{
+    background: #0B0223;
+    margin-top: 100px;
+}
+
+/* footer-logo */
+.footer-logo
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.footer-logo img
+{
+    width: 86.041px;
+    height: 40px;
+}
+
+.footer-logo-text
+{
+    color: #FFF;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* footer-info */
+.footer-info
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.footer-info-desc
+{
+    color: #FFF;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 /* responsive design */
 @media screen and (max-width:576px)
 {
