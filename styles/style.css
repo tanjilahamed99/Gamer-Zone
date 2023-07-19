@@ -452,7 +452,47 @@ span
 /* logo */
 .logo
 {
-    height: 500px;
+
+    margin-top: 100px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.logo-1
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px 90px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+}
+
+.logo-2
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 150px;
+    margin: 10px auto;
+}
+
+.logo-content
+{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-content img
+{
+    width: 40%;
+}
+
+.logo-desc
+{
+    color: #0B0223;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 /* responsive design */
@@ -580,5 +620,28 @@ span
         margin-left: 0px;
         margin-top: 0;
         padding: 5px 20px;
+    }
+
+    /* logo */
+    .logo-1,
+    .logo-2
+    {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0px 10px;
+        gap: 50px;
+    }
+
+    .logo-desc
+    {
+        color: #0B0223;
+        font-size: .8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .display-none
+    {
+        display: none;
     }
 }
