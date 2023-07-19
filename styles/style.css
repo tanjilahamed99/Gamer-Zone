@@ -102,6 +102,11 @@ ul li a
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 671px 605px;
+
 }
 
 .banner-intro
@@ -302,9 +307,15 @@ span
     align-items: center;
 }
 
+.hover
+{
+    position: relative;
+    bottom: 188px;
+    display: none;
+}
+
 .hover-desc
 {
-    display: none;
     text-align: center;
     font-size: 1.2rem;
     font-style: normal;
@@ -312,13 +323,11 @@ span
     line-height: normal;
     position: relative;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    bottom: 175px;
+    -webkit-text-fill-color: transparent;/
 }
 
-.card:hover .hover-desc
+.card:hover .hover
 {
     display: inline;
 }
@@ -480,7 +489,11 @@ span
     align-items: center;
     gap: 16px;
 }
-
+.logo-content:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 50px;
+    padding: 5px;
+}
 .logo-content img
 {
     width: 40%;
@@ -531,25 +544,78 @@ footer
 /* footer-info */
 .footer-info
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     text-align: center;
     align-items: center;
     gap: 40px;
     margin: 30px 0;
+    padding: 10px 267px;
 }
 
-.footer-info-desc
+.footer-info-desc,
+.footer-condition
 {
     color: #FFF;
     font-size: 1.1rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    cursor: pointer;
 }
 
+/* footer-image */
+.footer-image,
+.copyright
+{
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+}
+
+.footer-image img
+{
+    border-radius: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.footer-condition
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 10px 350px;
+}
+
+.footer-condition-text
+{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.footer-copyright .copyright
+{
+    color: rgba(255, 255, 255, 0.60);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 100px;
+    font-size: 1rem
+}
+
+
+
 /* responsive design */
-@media screen and (max-width:576px)
+@media screen and (max-width:992px)
 {
 
     /* nav */
@@ -576,11 +642,13 @@ footer
     /* header-banner */
     .header-banner
     {
-        padding: 10px 50px;
+        padding: 10px 60px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         text-align: center;
+        background-position: bottom;
+        background-size: 671px 605px;
     }
 
     .banner-images img
@@ -593,6 +661,17 @@ footer
     .banner-content
     {
         margin-top: 80px;
+    }
+
+    .banner-tittle
+    {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .banner-btn
+    {
+        margin-right: 0px;
     }
 
     /* .gamer-container */
@@ -631,6 +710,11 @@ footer
         width: 100%;
     }
 
+    .gamer-btn
+    {
+        margin-bottom: 50px;
+    }
+
     /* download */
     .download
     {
@@ -639,6 +723,12 @@ footer
         padding: 10px 40px;
         justify-content: center;
         gap: 30px;
+    }
+
+    .download-tittle,
+    .online-games-tittle
+    {
+        font-size: 2rem;
     }
 
     .download-desc,
@@ -665,7 +755,19 @@ footer
     {
         flex-direction: column;
         margin-top: 100px;
-        height: 1255px;
+        height: 1400px;
+    }
+
+    .career-desc br,
+    .gamer-content br
+    {
+        display: none;
+    }
+
+    .info-left-desc,
+    .info-right-desc
+    {
+        font-size: 0.9rem;
     }
 
     .Career-content
@@ -696,5 +798,39 @@ footer
     .display-none
     {
         display: none;
+    }
+
+    /* footer */
+    .footer-info
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 20px;
+    }
+
+    .footer-condition
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 20px;
+        gap: 50px;
+    }
+
+    .footer-copyright .copyright
+    {
+        text-align: center;
+        padding-bottom: 100px;
+        font-size: 1rem
+    }
+}
+
+
+/* pad responsive */
+@media screen and (min-width:576px) and (max-width:992px)
+{
+    .online-card
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
